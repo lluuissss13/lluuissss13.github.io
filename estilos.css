@@ -1,0 +1,9 @@
+h1{
+    color: darkmagenta;
+    background-color: green;
+    text-decoration: underline;
+}
+body{background-image: url(https://wallpapercave.com/wp/wp4788972.jpg);
+background-repeat: no-repeat; text-decoration:none}
+
+button{border-radius: 5px, 5px ;}
