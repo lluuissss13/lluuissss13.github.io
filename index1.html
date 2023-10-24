@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indice</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script> 
+        function saludar()
+        {
+            username = document.getElementById('inputusuario').value;
+            password = document.getElementById('inputpassword').value;
+
+            if(username == "luis" && password == "1234")
+                {
+                    alert("Bienvenido, Luis");
+                    window.location.href = "cannabis.html";
+                }
+            else 
+                {
+                    alert("Credenciales no válidas");
+                }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Bienvenido</h2>
+        <form id="login-form">
+            
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="inputusuario" name="username" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="inputpassword" name="password" required>
+            
+            <button type="button" onclick="saludar()">Iniciar Sesión</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
